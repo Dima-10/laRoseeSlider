@@ -1,0 +1,228 @@
+@import 'fonts.css';
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.container{
+   max-width: 1200px;
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+   
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -15px;
+   margin-right: -15px;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+    
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+/*-------------------*/
+
+.use-area .container {
+    justify-content: center;
+}
+.use-area__title {
+    color: #92278f;
+    font-family: "Gotham Light";
+    font-size: 53px;
+    line-height: 57px;
+    margin: 55px auto 0 auto;
+    width: 355px;
+    text-align: center;
+}
+.use-area__title b {    
+    font-family: "Gotham Bold";
+    font-size: 71px;
+    line-height: 71px;
+}
+.use-area-slider {
+    background-color: #ead4e0;
+}
+
+.use-area-slider__slide {
+    height: 699px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.use-area-slider .use-area-slider__slide:nth-child(1) {    
+    background-image: url(../img/img1.png);
+}
+.use-area-slider .use-area-slider__slide:nth-child(2) {    
+    background-image: url(../img/img2.png);
+}
+.use-area-content-slider__slide-content {
+    background-color: rgba(207, 25, 83, 0.6);
+    width: 420px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slide-content__title {
+    color: #fff;
+    font-family: "Gotham Regular";
+    font-size: 40px;
+    line-height: 44px;
+    text-transform: uppercase;
+    width: 220px;
+}
+.slide-content__text {
+    color: #fff;
+    font-family: "Gotham Regular";
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 21px;
+    width: 300px;
+}
+/* Стрелки */
+.swiper-controls {
+    position: absolute;
+    top: 180px;
+    left: calc(50% - 210px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    padding: 0 17px;
+}
+.swiper-button {
+    position: static;
+}
+.use-area-content-slider .swiper-button-prev::after,
+.use-area-content-slider .swiper-button-next::after, 
+.use-area-content-slider .swiper-button-prev,
+.use-area-content-slider .swiper-button-next{
+    color: #fff;
+    font-size: 26px;
+    height: 26px;
+}
+/* Пагинация */
+.use-area-slider .swiper-pagination {
+    bottom: 30px;
+}
+.use-area-slider .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    opacity: 1;
+}
+.use-area-slider .swiper-pagination-bullet-active {
+    background-color: #ff00ff;
+}
+
+
+
+
+.use-area-content-slider {
+    width: 420px;
+    height: 350px;    
+    position: absolute;
+    top: 160px;    
+    left: calc(50% - 210px);
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .swiper-controls {
+        display: none;
+    }
+
+    .use-area-content-slider__slide-content {
+        width: 300px;
+        height: 250px;
+    }
+    .slide-content__title {
+        color: #fff;
+        font-family: "Gotham Regular";
+        font-size: 30px;
+        line-height: 34px;
+        text-transform: uppercase;
+        width: 180px;
+    }
+    .slide-content__text {
+        color: #fff;
+        font-family: "Gotham Regular";
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 15px;
+        width: 220px;
+    }
+    .use-area-content-slider {
+        width: 300px;
+        height: 250px;   
+        position: absolute;
+        top: 200px;    
+        left: calc(50% - 150px);
+        z-index: 10;
+    }
+    .use-area__title {
+        font-size: 33px;
+        line-height: 40px;
+        width: 325px;
+        text-align: center;
+    }
+    .use-area__title b {    
+        font-size: 57px;
+        line-height: 57px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .use-area__title {
+        font-size: 33px;
+        line-height: 40px;
+        width: 285px;
+        text-align: center;
+    }
+}
+
